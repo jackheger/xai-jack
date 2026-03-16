@@ -1,0 +1,40 @@
+{
+  "generated_at_utc": "2026-03-15T00:14:39.324340+00:00",
+  "config": {
+    "data_dir": "C:\\Users\\jackj\\Work\\A6\\Explanability\\train_datasets\\for-2sec\\for-2seconds\\testing",
+    "output_dir": "C:\\Users\\jackj\\Work\\A6\\Explanability\\artifacts\\audio_models",
+    "spectrogram_dir": "C:\\Users\\jackj\\Work\\A6\\Explanability\\artifacts\\generated_spectrograms\\for_2seconds_testing",
+    "models": [
+      "custom_cnn"
+    ],
+    "image_size": 224,
+    "batch_size": 16,
+    "epochs": 1,
+    "validation_split": 0.2,
+    "seed": 42,
+    "regenerate_spectrograms": false
+  },
+  "class_names": [
+    "fake",
+    "real"
+  ],
+  "total_samples_in_source_dir": 1088,
+  "history": {
+    "loss": [
+      0.6654534935951233
+    ],
+    "accuracy": [
+      0.6727898716926575
+    ],
+    "val_loss": [
+      0.1754734069108963
+    ],
+    "val_accuracy": [
+      0.921658992767334
+    ]
+  },
+  "evaluation": {
+    "loss": 0.17547336220741272,
+    "accuracy": 0.921658992767334
+  }
+}

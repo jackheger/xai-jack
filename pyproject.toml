@@ -1,0 +1,46 @@
+[build-system]
+requires = ["hatchling>=1.27.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "unified-xai-interface"
+version = "0.1.0"
+description = "Unified Explainable AI interface prototype for audio and image workflows."
+readme = "README.md"
+requires-python = ">=3.10,<3.12"
+dependencies = [
+  "lime==0.2.0.1",
+  "librosa>=0.10,<0.11",
+  "matplotlib>=3.8,<3.9",
+  "numpy>=1.26,<2",
+  "opencv-python-headless>=4.10,<4.11",
+  "pandas>=2.2,<2.3",
+  "pillow>=10,<11",
+  "scikit-image>=0.22,<0.23",
+  "scikit-learn>=1.4,<1.6",
+  "shap==0.46.0",
+  "soundfile>=0.12,<0.13",
+  "streamlit>=1.33,<1.41",
+  "tensorflow-intel==2.15.1; platform_system == 'Windows'",
+  "tensorflow==2.15.1; platform_system != 'Windows'",
+]
+
+[dependency-groups]
+dev = [
+  "pytest>=8.3,<8.4",
+  "ruff>=0.11,<0.12",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/unified_xai"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = [
+  "ignore::pyparsing.exceptions.PyparsingDeprecationWarning",
+]
+
+[tool.uv]
+required-environments = [
+  "sys_platform == 'win32' and platform_machine == 'AMD64'",
+]

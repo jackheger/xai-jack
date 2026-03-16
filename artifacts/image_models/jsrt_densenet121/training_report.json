@@ -1,0 +1,67 @@
+{
+  "generated_at_utc": "2026-03-15T01:47:20.261533+00:00",
+  "config": {
+    "data_root": "C:\\Users\\jackj\\Work\\A6\\Explanability\\train_datasets\\archive",
+    "output_dir": "C:\\Users\\jackj\\Work\\A6\\Explanability\\artifacts\\image_models",
+    "image_size": 224,
+    "batch_size": 8,
+    "epochs": 4,
+    "seed": 42
+  },
+  "labels": [
+    "non_malignant",
+    "malignant"
+  ],
+  "split_sizes": {
+    "train": 172,
+    "validation": 37,
+    "test": 38
+  },
+  "class_balance": {
+    "train": {
+      "non_malignant": 102,
+      "malignant": 70
+    },
+    "validation": {
+      "non_malignant": 22,
+      "malignant": 15
+    },
+    "test": {
+      "non_malignant": 23,
+      "malignant": 15
+    }
+  },
+  "history": {
+    "loss": [
+      0.9836466312408447,
+      0.8718483448028564,
+      0.8197649717330933,
+      0.7368932962417603
+    ],
+    "accuracy": [
+      0.5,
+      0.5465116500854492,
+      0.569767415523529,
+      0.604651153087616
+    ],
+    "val_loss": [
+      0.7970492243766785,
+      0.7504462003707886,
+      0.7190772891044617,
+      0.6938313841819763
+    ],
+    "val_accuracy": [
+      0.5135135054588318,
+      0.6216216087341309,
+      0.5675675868988037,
+      0.5675675868988037
+    ]
+  },
+  "test_metrics": {
+    "accuracy": 0.5789473684210527,
+    "precision": 0.48148148148148145,
+    "recall": 0.8666666666666667,
+    "f1_score": 0.6190476190476191,
+    "roc_auc": 0.6434782608695653
+  }
+}

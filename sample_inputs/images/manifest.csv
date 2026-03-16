@@ -1,0 +1,4 @@
+sample_file,study_id,state,diagnosis,densenet_prediction,densenet_confidence,alexnet_prediction,alexnet_confidence
+jsrt_malignant_jpcln047.png,JPCLN047.png,malignant,"lung cancer(adenocarcinoma)",malignant,0.907248,malignant,0.506845
+jsrt_benign_jpcln036.png,JPCLN036.png,benign,tuberculoma,non_malignant,0.856247,non_malignant,0.578991
+jsrt_non_nodule_jpcnn086.png,JPCNN086.png,non-nodule,,non_malignant,0.776381,non_malignant,0.527580

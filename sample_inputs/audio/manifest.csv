@@ -1,0 +1,3 @@
+filename,true_label,recommended_model,predicted_label,predicted_confidence,source_note
+demo_real_packaged_correct.wav,real,deepfake_melspec_cnn,real,0.995570,"Selected from the local FoR testing subset because the packaged checkpoint classifies it correctly."
+demo_fake_packaged_correct.wav,fake,deepfake_melspec_cnn,fake,0.997396,"Selected from the local FoR testing subset because the packaged checkpoint classifies it correctly."
