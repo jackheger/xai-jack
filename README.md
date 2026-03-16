@@ -239,12 +239,11 @@ This project made extensive use of Generative AI during development.
   - `GPT-5.4 Codex` was used as an assistant throughout the project
   - I remained the main orchestrator of the project and decided what needed to be built, changed, or kept
   - Codex was used heavily across the different stages of the project to accelerate implementation, propose code, and help structure the work
-  - all important code changes, design choices, and outputs were reviewed by the student before being accepted
-  - I also tested the code locally and checked that the implementation matched the assignment requirements
+  - all important code changes, design choices, and outputs were reviewed by me before being accepted
 - Personal learning rationale:
   - this project was also an opportunity to learn how to use modern AI development tools in a practical and responsible way
   - these tools are not available in my company's environment, and I had never used Codex before this project
-  - Given the AI situation, I took this opportunity to learn how to use these tools and adopt the best practices, it is part of my personal and professional training
+  - Given the AI situation, I took this opportunity to learn how to use these tools and adopt the best practices, it is an important part of my personal and professional training
 
 ## Limitations
 
