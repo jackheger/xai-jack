@@ -221,6 +221,8 @@ uv run python scripts/train_image_models.py --models alexnet --epochs-alexnet 16
 
 - [project-structure.md](docs/project-structure.md)
 - [technical-report.md](docs/technical-report.md)
+- [pipeline-overview.md](docs/pipeline-overview.md)
+- [pipeline-technical.md](docs/pipeline-technical.md)
 
 ## Generative AI Usage Statement
 

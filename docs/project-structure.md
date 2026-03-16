@@ -13,6 +13,8 @@ This document describes where the important parts of the unified project live an
 Additional submission-oriented docs:
 
 - [technical-report.md](../docs/technical-report.md)
+- [pipeline-overview.md](../docs/pipeline-overview.md)
+- [pipeline-technical.md](../docs/pipeline-technical.md)
 
 Local-only resources used during development, but intentionally not committed to Git:
 
