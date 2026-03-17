@@ -61,19 +61,15 @@ AUDIO_MODELS: dict[str, AudioModelSpec] = {
     "deepfake_melspec_cnn": AudioModelSpec(
         model_id="deepfake_melspec_cnn",
         display_name="MobileNet-style classifier (packaged)",
-        artifact_path=PROJECT_ROOT
-        / "Deepfake-Audio-Detection-with-XAI"
-        / "Streamlit"
-        / "saved_model"
-        / "model",
+        artifact_path=AUDIO_MODEL_ARTIFACTS / "deepfake_melspec_cnn",
         labels=("real", "fake"),
         input_size=(224, 224),
         supported_explainers=("lime", "gradcam", "shap"),
         description=(
-            "Packaged TensorFlow SavedModel reused from the downloaded audio repository. "
-            "This is the only checkpoint currently installed in the workspace."
+            "Packaged TensorFlow SavedModel copied from the original audio repository into the "
+            "unified artifacts directory so fresh clones can run the audio demo path."
         ),
-        source_note="Original repo artifact already present in the workspace.",
+        source_note="Bundled checkpoint included in the repository for the default audio demo flow.",
         gradcam_target_layer="conv_pw_13_relu",
     ),
     "inception_v3": AudioModelSpec(

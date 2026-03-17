@@ -1,8 +1,11 @@
-Place exported chest X-ray TensorFlow SavedModels in this directory.
+This directory contains chest X-ray TensorFlow SavedModels used by the unified app.
 
-Expected paths for the current image prototype:
+Bundled in the repository:
 
 - `artifacts/image_models/jsrt_densenet121`
+
+Optional local export paths for additional checkpoints:
+
 - `artifacts/image_models/jsrt_alexnet`
 
 Those artifacts are produced by:

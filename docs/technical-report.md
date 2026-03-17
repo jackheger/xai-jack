@@ -133,6 +133,7 @@ This mapping is a practical replacement for the original README description, but
 
 - `deepfake_melspec_cnn`
   - packaged original checkpoint
+  - copied into `artifacts/audio_models/deepfake_melspec_cnn` for a runnable clone
   - recommended audio demo model
 - `vgg16`
   - local reconstruction checkpoint
@@ -148,6 +149,7 @@ Planned but not installed:
 
 - `jsrt_densenet121`
   - transfer-learning style DenseNet checkpoint
+  - bundled in the repository as the default chest X-ray checkpoint
   - recommended chest X-ray demo model
 - `jsrt_alexnet`
   - AlexNet-style reconstruction to match the original lung README description

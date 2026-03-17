@@ -85,6 +85,11 @@ The DenseNet checkpoint is the recommended chest X-ray demo model because it rem
   - `DenseNet121 (JSRT)`
   - `AlexNet-style (JSRT)`
 
+Bundled directly in this Git repository for a runnable clone:
+
+- audio: `deepfake_melspec_cnn`
+- chest X-ray: `jsrt_densenet121`
+
 ## Repository Structure
 
 High-level entry points:
@@ -106,6 +111,13 @@ This Git repository is intentionally lighter than the local development workspac
 - the two original downloaded source repositories
 - TensorFlow SavedModel weight files and other large generated artifacts
 - internal demo-only notes
+
+To keep the repository runnable after clone, one audio checkpoint and one image checkpoint are included:
+
+- `artifacts/audio_models/deepfake_melspec_cnn`
+- `artifacts/image_models/jsrt_densenet121`
+
+The larger local reconstruction checkpoints such as `VGG16`, `Custom CNN`, and `jsrt_alexnet` stay local and are not required to test the main demo path.
 
 To reproduce the full local setup after cloning, you need to add the datasets and model artifacts locally or regenerate them with the training/export scripts.
 

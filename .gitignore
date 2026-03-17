@@ -24,6 +24,11 @@ artifacts/outputs/
 artifacts/image_models/jsrt_joint_predictions.csv
 artifacts/image_models/**/model_summary.txt
 
+# Excluded local checkpoints
+artifacts/audio_models/vgg16/
+artifacts/audio_models/custom_cnn/
+artifacts/image_models/jsrt_alexnet/
+
 # Local model weights and SavedModel payloads
 artifacts/audio_models/**/saved_model.pb
 artifacts/audio_models/**/keras_metadata.pb
@@ -40,3 +45,16 @@ artifacts/image_models/**/assets/
 artifacts/image_models/**/train_split.csv
 artifacts/image_models/**/validation_split.csv
 artifacts/image_models/**/test_split.csv
+
+# Bundled runnable checkpoints kept in Git
+!artifacts/audio_models/deepfake_melspec_cnn/
+!artifacts/audio_models/deepfake_melspec_cnn/saved_model.pb
+!artifacts/audio_models/deepfake_melspec_cnn/keras_metadata.pb
+!artifacts/audio_models/deepfake_melspec_cnn/variables/
+!artifacts/audio_models/deepfake_melspec_cnn/variables/**
+!artifacts/image_models/jsrt_densenet121/
+!artifacts/image_models/jsrt_densenet121/saved_model.pb
+!artifacts/image_models/jsrt_densenet121/keras_metadata.pb
+!artifacts/image_models/jsrt_densenet121/fingerprint.pb
+!artifacts/image_models/jsrt_densenet121/variables/
+!artifacts/image_models/jsrt_densenet121/variables/**

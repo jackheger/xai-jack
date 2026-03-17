@@ -133,10 +133,18 @@ Responsibilities:
 
 Expected local artifact folders:
 
+- `artifacts/audio_models/deepfake_melspec_cnn`
 - `artifacts/audio_models/vgg16`
 - `artifacts/audio_models/custom_cnn`
 - `artifacts/image_models/jsrt_densenet121`
 - `artifacts/image_models/jsrt_alexnet`
+
+The Git repository intentionally keeps only the default runnable checkpoints:
+
+- `artifacts/audio_models/deepfake_melspec_cnn`
+- `artifacts/image_models/jsrt_densenet121`
+
+The larger local reconstruction checkpoints can be regenerated locally and are not required for the default demo path.
 
 Each artifact directory should contain a real TensorFlow SavedModel:
 
